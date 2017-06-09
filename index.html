@@ -1,0 +1,59 @@
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Homework 7 - B Simonsen</title>
+  </head>
+  
+  <body>
+    <h1>Bee Hive Status</h1>
+
+    <div id="hiveList">
+      <button type="button" id="status">
+        Add hive status
+      </button>
+      <table>
+        <thead>
+          <tr>
+            <th>Hive</th>
+            <th>Date Checked</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody id="beeHives">
+        </tbody>
+      </table>
+    </div>
+
+    <div id="addStatus" style="display:none">
+      <form>
+        <label for="hive">Hive</label>
+        <input type="text" id="hive" />
+        <label for="dateChecked">Date Checked</label>
+        <input type="date" id="dateChecked" />
+        <label for="notes">Notes</label>
+        <input type="text" id="notes" />
+        <br />
+        <button type="submit" id="submit">
+          Add Status
+        </button>
+        <button type="button" id="cancel">
+          Cancel
+        </button>
+      </form>
+    </div>
+
+    <button type="button" id="hello-button">Show Hello</button>
+    <hr/>
+    <div id="main"></div>
+    <script id="helloTemplate" type="text/x-handlebars-template">
+    Hello, {{name}};
+    </script>
+    
+    
+    <script src="jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+    <script src="addRows.js"></script>
+  </body>
+</html>
